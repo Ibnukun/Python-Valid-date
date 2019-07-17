@@ -1,104 +1,293 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
+class kalender:
+    print("Masukkan Tanggal")
+    tanggal= int(input())
+    print("Masukkan Bulan") 
+    bulan=int(input())
+    print("Masukkan Tahun")
+    tahun=int(input())
+    
+    if(bulan == 1):
+        hari = 31
+        namaBulan = " Januari "
+    elif(bulan == 2):
+        
+        if((tahun % 4 == 0 and tahun % 100!=0) or tahun %400 == 0):
+            hari=29
+        else:
+            hari=28
+        namaBulan = " Februari "
+    
+    elif(bulan == 3):
+        hari = 31
+        namaBulan= " Maret "
+        
+    elif(bulan == 4):
+        hari = 30
+        namaBulan= " April "
+        
+    elif(bulan == 5):
+        hari = 31
+        namaBulan= " Mei "
+        
+    elif(bulan == 6):
+        hari = 30
+        namaBulan= " Juni "
+        
+    elif(bulan == 7):
+        hari =31
+        namaBulan= " Juli "
+        
+    elif(bulan == 8):
+        hari = 31
+        namaBulan= " Agustus "
+        
+    elif(bulan == 9):
+        hari = 30
+        namaBulan= " September "
+        
+    elif(bulan == 10):
+        hari = 31
+        namaBulan= " Oktober "
+        
+    elif(bulan == 11):
+        hari = 30
+        namaBulan= " November "
+        
+    elif(bulan == 12):
+        hari = 31
+        namaBulan= " Desember "
+        
+    else:
+        hari = -1
+        namaBulan= bulan
+        
+    bTanggal = tanggal >=1 and tanggal <= hari
+    bBulan = bulan >=1 and bulan <=12
+    bValid = bTanggal and bBulan 
+    
+    
+    if(bValid):
+        hasil = " valid "
+    else:
+        hasil = " tidak valid "
+        
+    print("%d %s %d %s"%(tanggal,namaBulan,tahun, hasil))class kalender:
+    print("Masukkan Tanggal")
+    tanggal= int(input())
+    print("Masukkan Bulan") 
+    bulan=int(input())
+    print("Masukkan Tahun")
+    tahun=int(input())
+    
+    if(bulan == 1):
+        hari = 31
+        namaBulan = " Januari "
+    elif(bulan == 2):
+        
+        if((tahun % 4 == 0 and tahun % 100!=0) or tahun %400 == 0):
+            hari=29
+        else:
+            hari=28
+        namaBulan = " Februari "
+    
+    elif(bulan == 3):
+        hari = 31
+        namaBulan= " Maret "
+        
+    elif(bulan == 4):
+        hari = 30
+        namaBulan= " April "
+        
+    elif(bulan == 5):
+        hari = 31
+        namaBulan= " Mei "
+        
+    elif(bulan == 6):
+        hari = 30
+        namaBulan= " Juni "
+        
+    elif(bulan == 7):
+        hari =31
+        namaBulan= " Juli "
+        
+    elif(bulan == 8):
+        hari = 31
+        namaBulan= " Agustus "
+        
+    elif(bulan == 9):
+        hari = 30
+        namaBulan= " September "
+        
+    elif(bulan == 10):
+        hari = 31
+        namaBulan= " Oktober "
+        
+    elif(bulan == 11):
+        hari = 30
+        namaBulan= " November "
+        
+    elif(bulan == 12):
+        hari = 31
+        namaBulan= " Desember "
+        
+    else:
+        hari = -1
+        namaBulan= bulan
+        
+    bTanggal = tanggal >=1 and tanggal <= hari
+    bBulan = bulan >=1 and bulan <=12
+    bValid = bTanggal and bBulan 
+    
+    
+    if(bValid):
+        hasil = " valid "
+    else:
+        hasil = " tidak valid "
+        
+    print("%d %s %d %s"%(tanggal,namaBulan,tahun, hasil))class kalender:
+    print("Masukkan Tanggal")
+    tanggal= int(input())
+    print("Masukkan Bulan") 
+    bulan=int(input())
+    print("Masukkan Tahun")
+    tahun=int(input())
+    
+    if(bulan == 1):
+        hari = 31
+        namaBulan = " Januari "
+    elif(bulan == 2):
+        
+        if((tahun % 4 == 0 and tahun % 100!=0) or tahun %400 == 0):
+            hari=29
+        else:
+            hari=28
+        namaBulan = " Februari "
+    
+    elif(bulan == 3):
+        hari = 31
+        namaBulan= " Maret "
+        
+    elif(bulan == 4):
+        hari = 30
+        namaBulan= " April "
+        
+    elif(bulan == 5):
+        hari = 31
+        namaBulan= " Mei "
+        
+    elif(bulan == 6):
+        hari = 30
+        namaBulan= " Juni "
+        
+    elif(bulan == 7):
+        hari =31
+        namaBulan= " Juli "
+        
+    elif(bulan == 8):
+        hari = 31
+        namaBulan= " Agustus "
+        
+    elif(bulan == 9):
+        hari = 30
+        namaBulan= " September "
+        
+    elif(bulan == 10):
+        hari = 31
+        namaBulan= " Oktober "
+        
+    elif(bulan == 11):
+        hari = 30
+        namaBulan= " November "
+        
+    elif(bulan == 12):
+        hari = 31
+        namaBulan= " Desember "
+        
+    else:
+        hari = -1
+        namaBulan= bulan
+        
+    bTanggal = tanggal >=1 and tanggal <= hari
+    bBulan = bulan >=1 and bulan <=12
+    bValid = bTanggal and bBulan 
+    
+    
+    if(bValid):
+        hasil = " valid "
+    else:
+        hasil = " tidak valid "
+        
+    print("%d %s %d %s"%(tanggal,namaBulan,tahun, hasil))class kalender:
+    print("Masukkan Tanggal")
+    tanggal= int(input())
+    print("Masukkan Bulan") 
+    bulan=int(input())
+    print("Masukkan Tahun")
+    tahun=int(input())
+    
+    if(bulan == 1):
+        hari = 31
+        namaBulan = " Januari "
+    elif(bulan == 2):
+        
+        if((tahun % 4 == 0 and tahun % 100!=0) or tahun %400 == 0):
+            hari=29
+        else:
+            hari=28
+        namaBulan = " Februari "
+    
+    elif(bulan == 3):
+        hari = 31
+        namaBulan= " Maret "
+        
+    elif(bulan == 4):
+        hari = 30
+        namaBulan= " April "
+        
+    elif(bulan == 5):
+        hari = 31
+        namaBulan= " Mei "
+        
+    elif(bulan == 6):
+        hari = 30
+        namaBulan= " Juni "
+        
+    elif(bulan == 7):
+        hari =31
+        namaBulan= " Juli "
+        
+    elif(bulan == 8):
+        hari = 31
+        namaBulan= " Agustus "
+        
+    elif(bulan == 9):
+        hari = 30
+        namaBulan= " September "
+        
+    elif(bulan == 10):
+        hari = 31
+        namaBulan= " Oktober "
+        
+    elif(bulan == 11):
+        hari = 30
+        namaBulan= " November "
+        
+    elif(bulan == 12):
+        hari = 31
+        namaBulan= " Desember "
+        
+    else:
+        hari = -1
+        namaBulan= bulan
+        
+    bTanggal = tanggal >=1 and tanggal <= hari
+    bBulan = bulan >=1 and bulan <=12
+    bValid = bTanggal and bBulan 
+    
+    
+    if(bValid):
+        hasil = " valid "
+    else:
+        hasil = " tidak valid "
+        
+    print("%d %s %d %s"%(tanggal,namaBulan,tahun, hasil))
